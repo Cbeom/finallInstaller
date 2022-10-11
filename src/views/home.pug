@@ -1,0 +1,6 @@
+extends base
+include mixins/installer
+block content
+    if installer
+        each item in installer
+            +installer(item)
